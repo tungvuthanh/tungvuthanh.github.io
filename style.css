@@ -207,7 +207,13 @@ a:hover {
 .badge-primary {
   background-color: var(--tag-bg);
   color: var(--tag-text);
-  border-color: transparent;
+  border: 1px solid rgba(2, 132, 199, 0.25);
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="dark"] .badge-primary {
+  border-color: rgba(125, 211, 252, 0.25);
 }
 
 .hero-bio {
@@ -258,6 +264,133 @@ a:hover {
 .btn-outline:hover {
   background-color: var(--bg-alt);
   border-color: var(--border-hover);
+}
+
+/* Platform-specific Hero Action Buttons */
+.btn-spotify {
+  background-color: #1db954;
+  color: #ffffff !important;
+  border: 1px solid #1db954;
+}
+.btn-spotify:hover {
+  background-color: #1aa34a;
+  border-color: #1aa34a;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(29, 185, 84, 0.35);
+}
+
+.btn-youtube {
+  background-color: #ff0000;
+  color: #ffffff !important;
+  border: 1px solid #ff0000;
+}
+.btn-youtube:hover {
+  background-color: #d90000;
+  border-color: #d90000;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.35);
+}
+
+.btn-soundcloud {
+  background-color: #ff5500;
+  color: #ffffff !important;
+  border: 1px solid #ff5500;
+}
+.btn-soundcloud:hover {
+  background-color: #e04b00;
+  border-color: #e04b00;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(255, 85, 0, 0.35);
+}
+
+.btn-scholar {
+  background-color: #4285f4;
+  color: #ffffff !important;
+  border: 1px solid #4285f4;
+}
+.btn-scholar:hover {
+  background-color: #3367d6;
+  border-color: #3367d6;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(66, 133, 244, 0.35);
+}
+
+.btn-facebook {
+  background-color: #1877f2;
+  color: #ffffff !important;
+  border: 1px solid #1877f2;
+}
+.btn-facebook:hover {
+  background-color: #166fe5;
+  border-color: #166fe5;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(24, 119, 242, 0.35);
+}
+
+.btn-tiktok {
+  background-color: #010101;
+  color: #ffffff !important;
+  border: 1px solid #fe2c55;
+}
+.btn-tiktok:hover {
+  background-color: #fe2c55;
+  border-color: #fe2c55;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(254, 44, 85, 0.4);
+}
+
+.btn-chess {
+  background-color: #7fa650;
+  color: #ffffff !important;
+  border: 1px solid #7fa650;
+}
+.btn-chess:hover {
+  background-color: #69923e;
+  border-color: #69923e;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(127, 166, 80, 0.35);
+}
+
+.btn-publications {
+  background-color: #4f46e5;
+  color: #ffffff !important;
+  border: 1px solid #4f46e5;
+}
+.btn-publications:hover {
+  background-color: #4338ca;
+  border-color: #4338ca;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.35);
+}
+
+.btn-github {
+  background-color: #24292e;
+  color: #ffffff !important;
+  border: 1px solid #24292e;
+}
+.btn-github:hover {
+  background-color: #1b1f23;
+  border-color: #1b1f23;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(36, 41, 46, 0.35);
+}
+
+[data-theme="dark"] .btn-github {
+  background-color: #2d333b;
+  border-color: #444c56;
+}
+[data-theme="dark"] .btn-github:hover {
+  background-color: #373e47;
+  border-color: #545d68;
 }
 
 .avatar-wrapper {
