@@ -558,6 +558,29 @@ section {
   color: #ffffff;
 }
 
+.music-card-soundcloud {
+  border-top: 4px solid #ff5500;
+}
+
+.music-card-soundcloud:hover {
+  border-color: #ff5500;
+}
+
+.music-icon-soundcloud {
+  background-color: rgba(255, 85, 0, 0.12);
+  color: #ff5500;
+}
+
+.music-btn-soundcloud {
+  background-color: #ff5500;
+  color: #ffffff;
+}
+
+.music-btn-soundcloud:hover {
+  background-color: #e04b00;
+  color: #ffffff;
+}
+
 /* Publication Filters & Search */
 .pub-controls {
   display: flex;
