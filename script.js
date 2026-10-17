@@ -1,4 +1,4 @@
-// Personal Academic Website - Dr. Vu Thanh Tung
+// Personal Academic Website - Vu Thanh Tung
 // Interactive scripts: Dark mode, publication filtering, search, BibTeX copy & lightbox
 
 document.addEventListener('DOMContentLoaded', () => {
