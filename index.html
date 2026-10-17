@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Vu Thanh Tung | Mathematician & Researcher</title>
+  <meta name="description" content="Personal academic website of Dr. Vu Thanh Tung (Ph.D. Télécom ParisTech). Research in projective and Euclidean geometry, 6-point configurations, conics, involutions, and stochastic network models.">
+  <meta name="author" content="Vu Thanh Tung">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- MathJax 3 -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-brand">
+        <span>Vũ Thanh Tùng</span>
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#research">Research</a></li>
+        <li class="nav-item"><a href="#publications">Publications</a></li>
+        <li class="nav-item"><a href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
+        <li class="nav-item">
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+            <!-- Icon populated by script -->
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="about" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h1 class="hero-name">Dr. Vu Thanh Tung</h1>
+        <div class="hero-subtitle">Ph.D. Télécom ParisTech &bull; Independent Researcher in Geometry</div>
+        
+        <div class="hero-badges">
+          <span class="badge badge-primary">Euclidean & Projective Geometry</span>
+          <span class="badge badge-primary">6-Point Configurations & Involutions</span>
+          <span class="badge">Stochastic Geometry</span>
+          <span class="badge">ParisTech Alumni</span>
+          <span class="badge">Vietnam</span>
+        </div>
+
+        <p class="hero-bio">
+          I am a mathematician and researcher specializing in classical and modern plane and projective geometry, 
+          specifically the algebraic and synthetic structure of $n$-point and $n$-line configurations, conic envelopes, 
+          projective involutions, and invariant geometric systems.
+        </p>
+        <p class="hero-bio">
+          I obtained my Ph.D. in Applied Mathematics and Telecommunications from 
+          <strong>Télécom ParisTech</strong> (Paris, France), advised by Prof. Laurent Decreusefond and Prof. Philippe Martins, 
+          focusing on stochastic spatial models, point processes, and dimensioning of cellular networks.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#publications" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            Publications
+          </a>
+          <a href="papers/paper_vertex_involution.pdf" target="_blank" class="btn btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Latest Paper (PDF)
+          </a>
+          <a href="publications.bib" download class="btn btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            BibTeX File
+          </a>
+          <a href="https://github.com/tungvuthanh" target="_blank" rel="noopener" class="btn btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="avatar-wrapper">
+        <div class="avatar-inner">
+          VT
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Research Interests -->
+  <section id="research">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Research Areas</h2>
+        <p class="section-desc">Key mathematical directions and structural investigations.</p>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-icon">&Delta;</div>
+          <h3 class="pillar-title">6-Point Configurations & Conics</h3>
+          <p class="pillar-text">
+            Investigating the projective and affine properties of 6 general points ($6P$), including the polar envelope 
+            conic $\mathcal{E}_Q$, the vertex involution $\mathcal{J}$, canonical equilateral hyperbolas, and cubic Cremona transformations.
+          </p>
+          <div class="pillar-tags">
+            <span class="pillar-tag">Polar envelopes</span>
+            <span class="pillar-tag">Vertex involution</span>
+            <span class="pillar-tag">Cremona maps</span>
+            <span class="pillar-tag">Projective duality</span>
+          </div>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon">&otimes;</div>
+          <h3 class="pillar-title">Quadrangle Systems & Invariant Circles</h3>
+          <p class="pillar-text">
+            Structure of complete quadrangles ($QA$) and complete quadrilaterals ($QL$), including isogonal conjugacy, 
+            orthology, Miquel configurations, and invariant circles such as the Tulip circle and pedal reflection circles.
+          </p>
+          <div class="pillar-tags">
+            <span class="pillar-tag">Complete Quadrangles</span>
+            <span class="pillar-tag">Tulip Circle</span>
+            <span class="pillar-tag">Isogonal conjugacy</span>
+            <span class="pillar-tag">Orthology</span>
+          </div>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon">&prop;</div>
+          <h3 class="pillar-title">Perspective Triangles & Simplexes</h3>
+          <p class="pillar-text">
+            Generalizations of Droz-Farny lines, median-orthologic and median-parallelogic triangles, 
+            and their high-dimensional extensions to simplexes in $\mathbb{R}^n$ using barycentric and vector calculus.
+          </p>
+          <div class="pillar-tags">
+            <span class="pillar-tag">Droz-Farny theorem</span>
+            <span class="pillar-tag">Median-orthology</span>
+            <span class="pillar-tag">Simplexes in $\mathbb{R}^n$</span>
+            <span class="pillar-tag">Perspective centers</span>
+          </div>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon">&part;</div>
+          <h3 class="pillar-title">Stochastic Geometry & Cellular Networks</h3>
+          <p class="pillar-text">
+            Spatial modeling of wireless communication networks via Poisson point processes and Voronoi tessellations. 
+            Analytical evaluation of outage, handover probabilities, and energy optimization in cellular topologies.
+          </p>
+          <div class="pillar-tags">
+            <span class="pillar-tag">Poisson point processes</span>
+            <span class="pillar-tag">Voronoi tessellation</span>
+            <span class="pillar-tag">Energy optimization</span>
+            <span class="pillar-tag">Handover probability</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Paper Highlight -->
+  <section id="preprints">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Preprint</h2>
+        <p class="section-desc">Recent breakthrough in six-point projective configuration theory.</p>
+      </div>
+
+      <div class="highlight-card">
+        <span class="highlight-badge">Preprint (2026)</span>
+        <h3 class="highlight-title">The Vertex Involution and Canonical Conics of General Six-Point Configurations</h3>
+        <div class="highlight-meta">Vu Thanh Tung &bull; October 2026 &bull; 12 pages with figures & proofs</div>
+        <p class="highlight-body">
+          For any six general points $A_1, \dots, A_6$ in the projective plane, consider the six 5-point conics $\mathcal{C}_i$ 
+          passing through all points except $A_i$. For any point $Q$, their polar lines $\ell_i$ are proven to touch a single envelope 
+          conic $\mathcal{E}_Q$. When $Q$ is evaluated at a vertex $A_i$, the envelope conic degenerates into a pair of lines meeting 
+          at a point $A_i'$. We prove that the correspondence $A_i \mapsto A_i'$ is an involution on the configuration, and determine 
+          its explicit algebraic representation and connections to classical cubic Cremona transformations.
+        </p>
+        <div class="hero-actions">
+          <a href="papers/paper_vertex_involution.pdf" target="_blank" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download Full Paper (PDF)
+          </a>
+          <button class="btn btn-outline btn-bibtex-copy" data-target="bib-vu2026vertex">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy Citation
+          </button>
+        </div>
+        <div id="bib-vu2026vertex" class="bibtex-drawer">@article{vu2026vertex,
+  title={The Vertex Involution and Canonical Conics of General Six-Point Configurations},
+  author={Vu, Thanh Tung},
+  journal={Preprint},
+  year={2026},
+  note={Working paper, 12 pages with figures}
+}</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section id="publications">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Publications & Preprints</h2>
+        <p class="section-desc">Selected peer-reviewed articles, monographs, problems, and conference papers.</p>
+      </div>
+
+      <!-- Controls -->
+      <div class="pub-controls">
+        <div class="filter-group">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="geometry">Geometry & Pure Math</button>
+          <button class="filter-btn" data-filter="telecom">Wireless & Spatial Models</button>
+          <button class="filter-btn" data-filter="problems">Problems & Notes</button>
+          <button class="filter-btn" data-filter="preprints">Preprints</button>
+        </div>
+        <div class="search-box">
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="pub-search" class="search-input" placeholder="Search publications...">
+        </div>
+      </div>
+
+      <!-- Publication List -->
+      <div class="pub-list">
+
+        <!-- 2026: Vertex Involution -->
+        <article class="pub-card" data-category="geometry preprints">
+          <div class="pub-header">
+            <h3 class="pub-title">The Vertex Involution and Canonical Conics of General Six-Point Configurations</h3>
+            <span class="pub-year-badge">2026</span>
+          </div>
+          <div class="pub-authors"><span class="pub-author-self">Vu, Thanh Tung</span></div>
+          <div class="pub-venue">Preprint &bull; 12 pages</div>
+          <div class="pub-actions">
+            <a href="papers/paper_vertex_involution.pdf" target="_blank" class="pub-btn pub-btn-download">PDF</a>
+            <button class="pub-btn btn-bibtex-toggle" data-target="bib-vu2026v">BibTeX</button>
+            <button class="pub-btn btn-bibtex-copy" data-target="bib-vu2026v">Copy</button>
+          </div>
+          <div id="bib-vu2026v" class="bibtex-drawer">@article{vu2026vertex,
+  title={The Vertex Involution and Canonical Conics of General Six-Point Configurations},
+  author={Vu, Thanh Tung},
+  journal={Preprint},
+  year={2026},
+  note={Working paper, 12 pages with figures}
+}</div>
+        </article>
+
+        <!-- 2026: Isogonal Quadrangle -->
+        <article class="pub-card" data-category="geometry preprints">
+          <div class="pub-header">
+            <h3 class="pub-title">Isogonal Conjugacy and Orthology in General Quadrangles</h3>
+            <span class="pub-year-badge">2026</span>
+          </div>
+          <div class="pub-authors"><span class="pub-author-self">Vu, Thanh Tung</span></div>
+          <div class="pub-venue">Preprint</div>
+          <div class="pub-actions">
+            <a href="papers/isogonal_quadrangle.pdf" target="_blank" class="pub-btn pub-btn-download">PDF</a>
+            <button class="pub-btn btn-bibtex-toggle" data-target="bib-vu2026isog">BibTeX</button>
+            <button class="pub-btn btn-bibtex-copy" data-target="bib-vu2026isog">Copy</button>
+          </div>
+          <div id="bib-vu2026isog" class="bibtex-drawer">@article{vu2026isogonal,
+  title={Isogonal Conjugacy and Orthology in General Quadrangles},
+  author={Vu, Thanh Tung},
+  journal={Preprint},
+  year={2026}
+}</div>
+        </article>
+
+        <!-- 2026: Tulip Circle -->
+        <article class="pub-card" data-category="geometry preprints">
+          <div class="pub-header">
+            <h3 class="pub-title">A Remarkable Inscribed System: The Tulip Circle of Quadrangles</h3>
+            <span class="pub-year-badge">2026</span>
+          </div>
+          <div class="pub-authors"><span class="pub-author-self">Vu, Thanh Tung</span></div>
+          <div class="pub-venue">Preprint</div>
+          <div class="pub-actions">
+            <a href="papers/tung_tulip_circle.pdf" target="_blank" class="pub-btn pub-btn-download">PDF</a>
+            <button class="pub-btn btn-bibtex-toggle" data-target="bib-vu2026tulip">BibTeX</button>
+            <button class="pub-btn btn-bibtex-copy" data-target="bib-vu2026tulip">Copy</button>
+          </div>
+          <div id="bib-vu2026tulip" class="bibtex-drawer">@article{vu2026tulip,
+  title={A Remarkable Inscribed System: The Tulip Circle of Quadrangles},
+  author={Vu, Thanh Tung},
+  journal={Preprint},
+  year={2026}
+}</div>
+        </article>
+
+        <!-- 2022: Rational Numbers -->
+        <article class="pub-card" data-category="geometry problems">
+          <div class="pub-header">
+            <h3 class="pub-title">106.35 On the representation of rational numbers in the form</h3>
+            <span class="pub-year-badge">2022</span>
+          </div>
+          <div class="pub-authors"><span class="pub-author-self">Vu, Thanh Tung</span></div>
+          <div class="pub-venue">The Mathematical Gazette, Vol. 106, No. 567, pp. 504–505 (Cambridge University Press)</div>
+          <div class="pub-actions">
+            <a href="https://doi.org/10.1017/mag.2022.124" target="_blank" rel="noopener" class="pub-btn">Publisher</a>
+            <button class="pub-btn btn-bibtex-toggle" data-target="bib-vu2022106">BibTeX</button>
+            <button class="pub-btn btn-bibtex-copy" data-target="bib-vu2022106">Copy</button>
+          </div>
+          <div id="bib-vu2022106" class="bibtex-drawer">@article{vu2022106,
+  title={106.35 On the representation of rational numbers in the form},
+  author={Vu, Thanh Tung},
+  journal={The Mathematical Gazette},
+  volume={106},
+  number={567},
+  pages={504--505},
+  year={2022},
+  publisher={Cambridge University Press}
+}</div>
+        </article>
+
+        <!-- 2021: Median-Parallelogic Triangles -->
+        <article class="pub-card" data-category="geometry">
+          <div class="pub-header">
+            <h3 class="pub-title">Median-parallelogic and median-orthologic triangles</h3>
+            <span class="pub-year-badge">2021</span>
+          </div>
+          <div class="pub-authors"><span class="pub-author-self">Vu, Thanh Tung</span></div>
+          <div class="pub-venue">The Mathematical Gazette, Vol. 105, No. 562, pp. 136–139 (Cambridge University Press)</div>
+          <div class="pub-actions">
+            <a href="https://doi.org/10.1017/mag.2021.28" target="_blank" rel="noopener" class="pub-btn">Publisher</a>
+            <button class="pub-btn btn-bibtex-toggle" data-target="bib-vu2021median">BibTeX</button>
+            <button class="pub-btn btn-bibtex-copy" data-target="bib-vu2021median">Copy</button>
+          </div>
+          <div id="bib-vu2021median" class="bibtex-drawer">@article{vu2021median,
+  title={Median-parallelogic and median-orthologic triangles},
+  author={Vu, Thanh Tung},
+  journal={The Mathematical Gazette},
+  volume={105},
+  number={562},
+  pages={136--139},
+  year={2021},
+  publisher={Cambridge University Press}
+}</div>
+        </article>
+
+        <!-- 2021: Median-Orthologic Simplexes -->
+        <article class="pub-card" data-category="geometry">
+          <div class="pub-header">
+            <h3 class="pub-title">Median-orthologic Simplexes</h3>
+            <span class="pub-year-badge">2021</span>
+          </div>
+          <div class="pub-authors"><span class="pub-author-self">Vu, Thanh Tung</span></div>
+          <div class="pub-venue">International Journal of Computer Discovered Mathematics (IJCDM), Vol. 6, pp. 84–86</div>
+          <div class="pub-actions">
+            <button class="pub-btn btn-bibtex-toggle" data-target="bib-vu2021simplexes">BibTeX</button>
+            <button class="pub-btn btn-bibtex-copy" data-target="bib-vu2021simplexes">Copy</button>
+          </div>
+          <div id="bib-vu2021simplexes" class="bibtex-drawer">@article{vu2021simplexes,
+  title={Median-orthologic Simplexes},
+  author={Vu, Thanh Tung},
+  journal={International Journal of Computer Discovered Mathematics},
+  volume={6},
+  pages={84--86},
+  year={2021}
+}</div>
+        </article>
+
+        <!-- 2021: Crux Problem 4660 -->
+        <article class="pub-card" data-category="problems">
+          <div class="pub-header">
+            <h3 class="pub-title">Problem 4660</h3>
+            <span class="pub-year-badge">2021</span>
+          </div>
+          <div class="pub-authors"><span class="pub-author-self">Vu, Thanh Tung</span></div>
+          <div class="pub-venue">Crux Mathematicorum, Vol. 47, No. 6, p. 301 (Canadian Mathematical Society)</div>
+          <div class="pub-actions">
+            <button class="pub-btn btn-bibtex-toggle" data-target="bib-vu2021problem">BibTeX</button>
+            <button class="pub-btn btn-bibtex-copy" data-target="bib-vu2021problem">Copy</button>
+          </div>
+          <div id="bib-vu2021problem" class="bibtex-drawer">@article{vu2021problem,
+  title={Problem 4660},
+  author={Vu, Thanh Tung},
+  journal={Crux Mathematicorum},
+  volume={47},
+  number={6},
+  pages={301},
+  year={2021}
+}</div>
+        </article>
+
+        <!-- 2020: Perspective Triangles -->
+        <article class="pub-card" data-category="geometry">
+          <div class="pub-header">
+            <h3 class="pub-title">Some results on perspective triangles</h3>
+            <span class="pub-year-badge">2020</span>
+          </div>
+          <div class="pub-authors"><span class="pub-author-self">Vu, Thanh Tung</span> and Vu, Quoc My</div>
+          <div class="pub-venue">The Mathematical Gazette, Vol. 104, No. 561, pp. 535–539 (Cambridge University Press)</div>
+          <div class="pub-actions">
+            <a href="https://doi.org/10.1017/mag.2020.107" target="_blank" rel="noopener" class="pub-btn">Publisher</a>
+            <button class="pub-btn btn-bibtex-toggle" data-target="bib-vu2020some">BibTeX</button>
+            <button class="pub-btn btn-bibtex-copy" data-target="bib-vu2020some">Copy</button>
+          </div>
+          <div id="bib-vu2020some" class="bibtex-drawer">@article{vu2020some,
+  title={Some results on perspective triangles},
+  author={Vu, Thanh Tung and Vu, Quoc My},
+  journal={The Mathematical Gazette},
+  volume={104},
+  number={561},
+  pages={535--539},
+  year={2020},
+  publisher={Cambridge University Press}
+}</div>
+        </article>
+
+        <!-- 2019: AMM Problem 12119 -->
+        <article class="pub-card" data-category="geometry problems">
+          <div class="pub-header">
+            <h3 class="pub-title">Problem 12119</h3>
+            <span class="pub-year-badge">2019</span>
+          </div>
+          <div class="pub-authors"><span class="pub-author-self">Vu, Thanh Tung</span></div>
+          <div class="pub-venue">The American Mathematical Monthly, Vol. 126, No. 6, p. 562 (MAA / Taylor & Francis)</div>
+          <div class="pub-actions">
+            <button class="pub-btn btn-bibtex-toggle" data-target="bib-tung2019problem">BibTeX</button>
+            <button class="pub-btn btn-bibtex-copy" data-target="bib-tung2019problem">Copy</button>
+          </div>
+          <div id="bib-tung2019problem" class="bibtex-drawer">@article{tung2019problem,
+  title={Problem 12119},
+  author={Tung, Vu Thanh},
+  journal={The American Mathematical Monthly},
+  volume={126},
+  number={6},
+  pages={562},
+  year={2019}
+}</div>
+        </article>
+
+        <!-- 2016: Forum Geometricorum -->
+        <article class="pub-card" data-category="geometry">
+          <div class="pub-header">
+            <h3 class="pub-title">A generalization of Droz-Farny's line theorem with orthologic triangles</h3>
+            <span class="pub-year-badge">2016</span>
+          </div>
+          <div class="pub-authors">Ngo, Quang Duong and <span class="pub-author-self">Vu, Thanh Tung</span></div>
+          <div class="pub-venue">Forum Geometricorum, Vol. 16, pp. 415–418</div>
+          <div class="pub-actions">
+            <a href="https://forumgeom.fau.edu/FG2016volume16/FG201646.pdf" target="_blank" rel="noopener" class="pub-btn pub-btn-download">PDF</a>
+            <button class="pub-btn btn-bibtex-toggle" data-target="bib-ngo2016generalization">BibTeX</button>
+            <button class="pub-btn btn-bibtex-copy" data-target="bib-ngo2016generalization">Copy</button>
+          </div>
+          <div id="bib-ngo2016generalization" class="bibtex-drawer">@inproceedings{ngo2016generalization,
+  title={A generalization of Droz-Farny's line theorem with orthologic triangles},
+  author={Ngo, Quang Duong and Vu, Thanh Tung},
+  booktitle={Forum Geometricorum},
+  volume={16},
+  pages={415--418},
+  year={2016}
+}</div>
+        </article>
+
+        <!-- 2014: Wireless Personal Communications -->
+        <article class="pub-card" data-category="telecom">
+          <div class="pub-header">
+            <h3 class="pub-title">An analytical model for evaluating outage and handover probability of cellular wireless networks</h3>
+            <span class="pub-year-badge">2014</span>
+          </div>
+          <div class="pub-authors"><span class="pub-author-self">Vu, Than-Tung</span>, Laurent Decreusefond, and Philippe Martins</div>
+          <div class="pub-venue">Wireless Personal Communications, Vol. 74, No. 4, pp. 1117–1127 (Springer)</div>
+          <div class="pub-actions">
+            <a href="https://doi.org/10.1007/s11277-013-1383-7" target="_blank" rel="noopener" class="pub-btn">Publisher</a>
+            <button class="pub-btn btn-bibtex-toggle" data-target="bib-vu2014analytical">BibTeX</button>
+            <button class="pub-btn btn-bibtex-copy" data-target="bib-vu2014analytical">Copy</button>
+          </div>
+          <div id="bib-vu2014analytical" class="bibtex-drawer">@article{vu2014analytical,
+  title={An analytical model for evaluating outage and handover probability of cellular wireless networks},
+  author={Vu, Than-Tung and Decreusefond, Laurent and Martins, Philippe},
+  journal={Wireless personal communications},
+  volume={74},
+  number={4},
+  pages={1117--1127},
+  year={2014},
+  publisher={Springer US Boston}
+}</div>
+        </article>
+
+        <!-- 2014: IEEE ICC -->
+        <article class="pub-card" data-category="telecom">
+          <div class="pub-header">
+            <h3 class="pub-title">Energy modeling and optimization of radio access network using stochastic deployment models</h3>
+            <span class="pub-year-badge">2014</span>
+          </div>
+          <div class="pub-authors"><span class="pub-author-self">Vu, Thanh Tung</span>, Mamdouh El Tabach, and Taoufik En-Najjary</div>
+          <div class="pub-venue">2014 IEEE International Conference on Communications Workshops (ICC), pp. 895–900 (IEEE)</div>
+          <div class="pub-actions">
+            <a href="https://doi.org/10.1109/ICCW.2014.6881313" target="_blank" rel="noopener" class="pub-btn">IEEE Xplore</a>
+            <button class="pub-btn btn-bibtex-toggle" data-target="bib-vu2014energy">BibTeX</button>
+            <button class="pub-btn btn-bibtex-copy" data-target="bib-vu2014energy">Copy</button>
+          </div>
+          <div id="bib-vu2014energy" class="bibtex-drawer">@inproceedings{vu2014energy,
+  title={Energy modeling and optimization of radio access network using stochastic deployment models},
+  author={Vu, Thanh Tung and El Tabach, Mamdouh and En-Najjary, Taoufik},
+  booktitle={2014 IEEE International Conference on Communications Workshops (ICC)},
+  pages={895--900},
+  year={2014},
+  organization={IEEE}
+}</div>
+        </article>
+
+        <!-- 2014: European Wireless -->
+        <article class="pub-card" data-category="telecom">
+          <div class="pub-header">
+            <h3 class="pub-title">Statistical power consumption assessment of mobile access networks at country level</h3>
+            <span class="pub-year-badge">2014</span>
+          </div>
+          <div class="pub-authors"><span class="pub-author-self">Vu, Thanh Tung</span>, Mamdouh El Tabach, Taoufik En-Najjary, and Azeddine Gati</div>
+          <div class="pub-venue">European Wireless 2014; 20th European Wireless Conference, pp. 1–6 (VDE)</div>
+          <div class="pub-actions">
+            <button class="pub-btn btn-bibtex-toggle" data-target="bib-vu2014statistical">BibTeX</button>
+            <button class="pub-btn btn-bibtex-copy" data-target="bib-vu2014statistical">Copy</button>
+          </div>
+          <div id="bib-vu2014statistical" class="bibtex-drawer">@inproceedings{vu2014statistical,
+  title={Statistical power consumption assessment of mobile access networks at country level},
+  author={Vu, Thanh Tung and El Tabach, Mamdouh and En-Najjary, Taoufik and Gati, Azeddine},
+  booktitle={European Wireless 2014; 20th European Wireless Conference},
+  pages={1--6},
+  year={2014},
+  organization={VDE}
+}</div>
+        </article>
+
+        <!-- 2013: ITC -->
+        <article class="pub-card" data-category="telecom">
+          <div class="pub-header">
+            <h3 class="pub-title">Modeling energy consumption in cellular networks</h3>
+            <span class="pub-year-badge">2013</span>
+          </div>
+          <div class="pub-authors">Laurent Decreusefond, <span class="pub-author-self">Vu, Thanh Tung</span>, and Philippe Martins</div>
+          <div class="pub-venue">Proceedings of the 2013 25th International Teletraffic Congress (ITC), pp. 1–7 (IEEE)</div>
+          <div class="pub-actions">
+            <button class="pub-btn btn-bibtex-toggle" data-target="bib-decreusefond2013modeling">BibTeX</button>
+            <button class="pub-btn btn-bibtex-copy" data-target="bib-decreusefond2013modeling">Copy</button>
+          </div>
+          <div id="bib-decreusefond2013modeling" class="bibtex-drawer">@inproceedings{decreusefond2013modeling,
+  title={Modeling energy consumption in cellular networks},
+  author={Decreusefond, Laurent and Vu, T Tung and Martins, Philippe},
+  booktitle={Proceedings of the 2013 25th International Teletraffic Congress (ITC)},
+  pages={1--7},
+  year={2013},
+  organization={IEEE}
+}</div>
+        </article>
+
+        <!-- 2012: PhD Thesis -->
+        <article class="pub-card" data-category="telecom">
+          <div class="pub-header">
+            <h3 class="pub-title">Spatial models for cellular network planning</h3>
+            <span class="pub-year-badge">2012</span>
+          </div>
+          <div class="pub-authors"><span class="pub-author-self">Vu, Thanh Tung</span></div>
+          <div class="pub-venue">Ph.D. Thesis, Télécom ParisTech</div>
+          <div class="pub-actions">
+            <button class="pub-btn btn-bibtex-toggle" data-target="bib-vu2012spatial">BibTeX</button>
+            <button class="pub-btn btn-bibtex-copy" data-target="bib-vu2012spatial">Copy</button>
+          </div>
+          <div id="bib-vu2012spatial" class="bibtex-drawer">@phdthesis{vu2012spatial,
+  title={Spatial models for cellular network planning},
+  author={Vu, Thanh Tung},
+  year={2012},
+  school={T{\'e}l{\'e}com ParisTech}
+}</div>
+        </article>
+
+        <!-- 2012: VALUETOOLS -->
+        <article class="pub-card" data-category="telecom">
+          <div class="pub-header">
+            <h3 class="pub-title">Robust methods for LTE and WiMAX dimensioning</h3>
+            <span class="pub-year-badge">2012</span>
+          </div>
+          <div class="pub-authors">Laurent Decreusefond, Eduardo Ferraz, Philippe Martins, and <span class="pub-author-self">Vu, Thanh Tung</span></div>
+          <div class="pub-venue">6th International ICST Conference on Performance Evaluation Methodologies and Tools (VALUETOOLS), pp. 74–82 (IEEE)</div>
+          <div class="pub-actions">
+            <button class="pub-btn btn-bibtex-toggle" data-target="bib-decreusefond2012robust">BibTeX</button>
+            <button class="pub-btn btn-bibtex-copy" data-target="bib-decreusefond2012robust">Copy</button>
+          </div>
+          <div id="bib-decreusefond2012robust" class="bibtex-drawer">@inproceedings{decreusefond2012robust,
+  title={Robust methods for LTE and WiMAX dimensioning},
+  author={Decreusefond, Laurent and Ferraz, Eduardo and Martins, Philippe and Vu, Thanh-Tung},
+  booktitle={6th International ICST Conference on Performance Evaluation Methodologies and Tools},
+  pages={74--82},
+  year={2012},
+  organization={IEEE}
+}</div>
+        </article>
+
+        <!-- 2012: CoRR / arXiv -->
+        <article class="pub-card" data-category="telecom">
+          <div class="pub-header">
+            <h3 class="pub-title">Energy consumption in cellular network: ON-OFF model and impact of mobility</h3>
+            <span class="pub-year-badge">2012</span>
+          </div>
+          <div class="pub-authors"><span class="pub-author-self">Vu, Thanh Tung</span>, Laurent Decreusefond, and Philippe Martins</div>
+          <div class="pub-venue">CoRR, abs/1204.4326</div>
+          <div class="pub-actions">
+            <a href="https://arxiv.org/abs/1204.4326" target="_blank" rel="noopener" class="pub-btn">arXiv</a>
+            <button class="pub-btn btn-bibtex-toggle" data-target="bib-vu2012energy">BibTeX</button>
+            <button class="pub-btn btn-bibtex-copy" data-target="bib-vu2012energy">Copy</button>
+          </div>
+          <div id="bib-vu2012energy" class="bibtex-drawer">@article{vu2012energy,
+  title={Energy consumption in cellular network: ON-OFF model and impact of mobility},
+  author={Vu, Thanh Tung and Decreusefond, Laurent and Martins, Philippe},
+  journal={CoRR},
+  volume={abs/1204.4326},
+  year={2012}
+}</div>
+        </article>
+
+        <!-- 2010: arXiv -->
+        <article class="pub-card" data-category="telecom">
+          <div class="pub-header">
+            <h3 class="pub-title">An analytical model for evaluating outage and handover probability of cellular wireless networks</h3>
+            <span class="pub-year-badge">2010</span>
+          </div>
+          <div class="pub-authors">Laurent Decreusefond, Philippe Martins, and <span class="pub-author-self">Vu, Than-Tung</span></div>
+          <div class="pub-venue">arXiv preprint arXiv:1009.0193</div>
+          <div class="pub-actions">
+            <a href="https://arxiv.org/abs/1009.0193" target="_blank" rel="noopener" class="pub-btn">arXiv</a>
+            <button class="pub-btn btn-bibtex-toggle" data-target="bib-decreusefond2010analytical">BibTeX</button>
+            <button class="pub-btn btn-bibtex-copy" data-target="bib-decreusefond2010analytical">Copy</button>
+          </div>
+          <div id="bib-decreusefond2010analytical" class="bibtex-drawer">@article{decreusefond2010analytical,
+  title={An analytical model for evaluating outage and handover probability of cellular wireless networks},
+  author={Decreusefond, Laurent and Martins, Philippe and Vu, Than-Tung},
+  journal={arXiv preprint arXiv:1009.0193},
+  year={2010}
+}</div>
+        </article>
+
+        <!-- 1984: Flange dimensioning -->
+        <article class="pub-card" data-category="telecom">
+          <div class="pub-header">
+            <h3 class="pub-title">Proposal for a calculation procedure for flange dimensioning</h3>
+            <span class="pub-year-badge">1984</span>
+          </div>
+          <div class="pub-authors">M. Podhorsky and <span class="pub-author-self">T. Vu</span></div>
+          <div class="pub-venue">VGB Kraftwerkstech., Vol. 64, No. 7</div>
+          <div class="pub-actions">
+            <button class="pub-btn btn-bibtex-toggle" data-target="bib-podhorsky1984">BibTeX</button>
+            <button class="pub-btn btn-bibtex-copy" data-target="bib-podhorsky1984">Copy</button>
+          </div>
+          <div id="bib-podhorsky1984" class="bibtex-drawer">@article{podhorsky1984proposal,
+  title={Proposal for a calcualtion procedure for flange dimensioning},
+  author={Podhorsky, M and Vu, T},
+  journal={VGB Kraftwerkstech.;(Germany, Federal Republic of)},
+  volume={64},
+  number={7},
+  year={1984}
+}</div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Geometry Gallery -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Geometry Gallery</h2>
+        <p class="section-desc">Visualizations and computational figures from my research on configurations, conics, and quadrangles.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Card 1 -->
+        <div class="gallery-card">
+          <div class="gallery-img-wrapper" title="Click to enlarge">
+            <img src="images/fig_involution.png" alt="6-Point Configuration & Vertex Involution" class="gallery-img">
+          </div>
+          <div class="gallery-content">
+            <h3 class="gallery-title">The 6-Point Vertex Involution $\mathcal{J}$</h3>
+            <p class="gallery-desc">
+              Given 6 general points $A_1, \dots, A_6$, the five-point conics $\mathcal{C}_i$ and their polar lines envelope 
+              conics $\mathcal{E}_Q$. For vertices $A_i$, the envelope degenerates into pairs of lines whose intersections define 
+              the involution partner $A_i' = \mathcal{J}(A_i)$ and associated canonical hyperbolas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="gallery-card">
+          <div class="gallery-img-wrapper" title="Click to enlarge">
+            <img src="images/fig_triangle_rotation_equilateral.png" alt="Equilateral Triangle Rotation" class="gallery-img">
+          </div>
+          <div class="gallery-content">
+            <h3 class="gallery-title">Equilateral Rotation & Perspective Conics</h3>
+            <p class="gallery-desc">
+              Geometric transformations generated by equilateral rotations, perspective triangle centers, and the envelopes 
+              of perspective axes across family parameters.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="gallery-card">
+          <div class="gallery-img-wrapper" title="Click to enlarge">
+            <img src="images/fig_eqf.png" alt="Equilateral Quadrangle Family" class="gallery-img">
+          </div>
+          <div class="gallery-content">
+            <h3 class="gallery-title">Equilateral Quadrangle Family (EQF)</h3>
+            <p class="gallery-desc">
+              Loci of centers, inscribed circles, and dual envelopes in equilateral quadrangle systems, displaying symmetry groups 
+              and invariant pencil behavior.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="gallery-card">
+          <div class="gallery-img-wrapper" title="Click to enlarge">
+            <img src="images/isog_figure.png" alt="Isogonal Conjugacy in Quadrangles" class="gallery-img">
+          </div>
+          <div class="gallery-content">
+            <h3 class="gallery-title">Isogonal Conjugacy in Quadrangles</h3>
+            <p class="gallery-desc">
+              Study of quadratic transformations and orthology in complete quadrangles, relating isogonal conjugates 
+              to nine-point conics and pedal configurations.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="gallery-card">
+          <div class="gallery-img-wrapper" title="Click to enlarge">
+            <img src="images/fig_ql_miquel_morley.png" alt="Miquel-Morley Configuration" class="gallery-img">
+          </div>
+          <div class="gallery-content">
+            <h3 class="gallery-title">Miquel-Morley Incentre Configuration</h3>
+            <p class="gallery-desc">
+              The interplay between complete quadrilateral in-circles, Miquel points, and Morley equilateral triangles, 
+              demonstrating remarkable concurrent centers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Contact & Collaboration</h2>
+        <p class="section-desc">Feel free to reach out for research inquiries, geometric problem discussions, or preprint correspondence.</p>
+      </div>
+
+      <div style="background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 2rem;">
+        <p style="margin-bottom: 1rem; font-size: 1.05rem;">
+          <strong>Email:</strong> <a href="mailto:tungvtt@gmail.com">tungvtt@gmail.com</a>
+        </p>
+        <p style="margin-bottom: 1rem; font-size: 1.05rem;">
+          <strong>GitHub:</strong> <a href="https://github.com/tungvuthanh" target="_blank" rel="noopener">github.com/tungvuthanh</a>
+        </p>
+        <p style="margin-bottom: 1rem; font-size: 1.05rem;">
+          <strong>Location:</strong> Vietnam
+        </p>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">
+          I am always happy to correspond with researchers, geometers, and students interested in configuration geometry, 
+          conic systems, and mathematical problem-solving.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div>
+        &copy; 2026 Dr. Vu Thanh Tung. Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>.
+      </div>
+      <div>
+        Built with clean HTML5 &bull; CSS3 &bull; MathJax
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true">
+    <img id="lightbox-img" class="lightbox-img" src="" alt="Enlarged view">
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast"></div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
