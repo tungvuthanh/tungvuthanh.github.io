@@ -393,6 +393,19 @@ a:hover {
   border-color: #545d68;
 }
 
+.btn-linkedin {
+  background-color: #0077b5;
+  color: #ffffff !important;
+  border: 1px solid #0077b5;
+}
+.btn-linkedin:hover {
+  background-color: #005582;
+  border-color: #005582;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 119, 181, 0.35);
+}
+
 .avatar-wrapper {
   position: relative;
   width: 170px;
